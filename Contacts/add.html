@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>ContAnt | Add</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
+
+    <nav>
+      <ul id="top-menu" class="nav nav-pills ">
+        <li role="presentation" ><a href="index.html">Contacts</a></li>
+        <li role="presentation"class="active" ><a id="active-tab" href="#">Add</a></li>
+        <li role="presentation"><a href="#">Favourites</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="container">
+          <div class = "add-image">
+            <img class="thumbnail" src="res/person.png">
+          </div>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="container">
+        <form class="navbar-form navbar-left" role="name">
+           <div class="form-group">
+               <input id="name" type="text" class="form-control add-input" placeholder="Name">
+               <input id="surname" type="text" class="form-control add-input" placeholder="Surname">
+               <input id="number" type="text" class="form-control add-input" placeholder="Number">
+           </div>
+             <button id="add" type="submit" class="btn add-button">Add</button>
+        </form>
+
+     <div id="success">
+
+     </div>
+    </section>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/add.js"></script>
+
+    <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.add-image', {
+      duration: 1000,
+      origin:'top'
+    });
+
+    sr.reveal('.form-group', {
+      duration: 1000,
+      origin:'top'
+    });
+
+    sr.reveal('.add-button', {
+      duration: 1000,
+      origin:'top'
+    });
+    </script>
+
+  </body>
+</html>
